@@ -1,0 +1,23 @@
+{
+  "name": "backstackjs",
+  "version": "1.0.0",
+  "description": "Equipping Jamstack apps with powerful, privacy-focused backend functionality. The goal of Backstack is to empower developers to build Jamstack applications that are just as powerful and flexible as traditional client-server applications without sacrificing user privacy or trust.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/therecluse26/backstackjs.git"
+  },
+  "author": "therecluse26",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/therecluse26/backstackjs/issues"
+  },
+  "homepage": "https://github.com/therecluse26/backstackjs#readme",
+  "dependencies": {
+    "@auth0/auth0-spa-js": "^1.13.1",
+    "axios": "^0.21.0"
+  }
+}
