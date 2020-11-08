@@ -1,18 +1,38 @@
 export default class {
 
-    constructor(store) {
-        this.store = store;
+    _get = require('lodash/get');
+    _set = require('lodash/set');
+    _unset = require('lodash/unset');
+
+    constructor(app) {
+        this.store = app.data;
     }
 
-    get(key) {
-
+    /**
+     * Gets value of data object property
+     * 
+     * @param {string} path // Can accept dot or bracket notated paths
+     */
+    get(path) {
+        return this._get(this.store, path, null);
     }
 
-    set(key, value) {
-
+    /**
+     * Sets value of data object property
+     * 
+     * @param {string} path // Can accept dot or bracket notated paths
+     * @param {*} value 
+     */
+    set(path, value) {
+        return this._set(this.store, path, value);
     }
 
-    delete(key) {
-
+    /**
+     * Deletes value of data object property
+     * 
+     * @param {string} path 
+     */
+    delete(path) {
+        return this._unset(this.store, path);
     }
 }

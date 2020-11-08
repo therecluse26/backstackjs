@@ -33,7 +33,7 @@ export default class Backstack {
                     this.manifest.updates = null;
                 })
                 .catch(() => {
-
+                    // Handle error
                 });
         } else {
             this.presentLoginModal();
@@ -99,7 +99,5 @@ export default class Backstack {
                 this.store = import('./stores/customStore')(store)
         }
     }
-
-
 
 }
